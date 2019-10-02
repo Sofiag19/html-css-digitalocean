@@ -1,5 +1,5 @@
 img {
-width: 100%;
+max-width: 100%;
 height: auto;
 }
 
@@ -30,6 +30,6 @@ a {
   transform: translate(-50%,-50%);
 }
 
-#designed {
-  height: 600px; /* DEBUG:  */
+#designed img {
+  max-width: 50%;
 }
