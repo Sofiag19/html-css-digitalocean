@@ -1,35 +1,96 @@
-/* img {
-max-width: 100%;
-height: auto;
-} */
+/* generali */
 
 a {
   text-decoration: none;
 }
 
-#ms_nav-down, #ms_nav-up, #ms_nav-hidden{
-  margin-top: 15px;
-}
+/* header */
 
-#welcome {
-  margin-top: 150px; /* DEBUG:  */
-}
+  /* nav */
 
-#ms_nav-lg {
-  background: white;
-}
 
-.relative {
-  position: relative;
-}
+    /* nav visible */
 
-.absolute-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
+    #ms_nav-lg {
+      background: white;
+    }
 
-#designed img {
-  max-width: 50%;
-}
+      /* up */
+      #ms_nav-up {
+        padding-top: 10px;
+      }
+
+        #ms_nav-up a {
+          color: rgba(129, 129, 129, 0.9);
+        }
+
+      /* down */
+      #ms_nav-down {
+        border-top: 1px solid rgba(159, 159, 159, 0.5);
+        padding-top: 10px;
+      }
+      .ms_line_nav {
+        line-height: 30px;
+      }
+    /* nav hidden */
+
+  /* welcome */
+
+  #welcome {
+    margin-top: 100px; /* DEBUG:  */
+    background-image: url("../img/bg-home-1-d54581d7.jpg");
+    padding: 40px 0;
+  }
+
+    #ms_home {
+      line-height: 30px;
+      color: white;
+      padding: 40px 0;
+    }
+
+      #ms_home h1 {
+        font-size:40px ;
+        font-weight: 700;
+      }
+
+      #ms_home p {
+        font-size: 24px;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+    #ms_form {
+      background-color: white;
+      padding: 40px;
+      border-radius: 5px;
+    }
+
+      #ms_form h3 {
+        color: #031b4e;
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+/* main */
+
+  /* section customers */
+
+  /* section deploy */
+
+  /* section designed */
+  #designed img {
+    max-width: 50%;
+  }
+
+  /* section built */
+
+  /* section service */
+
+  /* section developments */
+
+  /* section get started */
+
+/* footer */
+
+  /* up */
+
+  /* down */
