@@ -6,3 +6,11 @@ img {
 a {
   text-decoration: none;
 }
+
+#ms_nav-down, #ms_nav-up, #ms_nav-hidden{
+  margin-top: 15px;
+}
+
+#welcome {
+  margin-top: 80px;
+}
