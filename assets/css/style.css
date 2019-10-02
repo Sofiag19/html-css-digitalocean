@@ -1,6 +1,6 @@
 img {
-    width: 172px;
-    height: 29px;
+width: 100%;
+height: auto;
 }
 
 a {
@@ -12,5 +12,24 @@ a {
 }
 
 #welcome {
-  margin-top: 80px;
+  margin-top: 150px; /* DEBUG:  */
+}
+
+#ms_nav-lg {
+  background: white;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#designed {
+  height: 600px; /* DEBUG:  */
 }
