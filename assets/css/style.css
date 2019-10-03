@@ -41,10 +41,23 @@ h2 {
       #ms_nav-down {
         border-top: 1px solid rgba(159, 159, 159, 0.5);
         padding: 20px 5px 10px;
+        color: #031b4e;
       }
+
       .ms_line_nav {
         line-height: 30px;
       }
+
+      .ms_line-nav a{
+        color: #0069ff;
+        border: 1px solid #0069ff;
+        display: inline-block;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      /* background-color: #0069ff;  fare hover*/
+
     /* nav hidden */
 
   /* welcome */
@@ -81,7 +94,15 @@ h2 {
         color: #031b4e;
         font-size: 30px;
         font-weight: 700;
+        margin: 20px 0;
       }
+
+      #google a, #github a{
+        width: 100%;
+        border: 1px solid black;
+      }
+
+
 
 /* main */
 
