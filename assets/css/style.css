@@ -4,10 +4,15 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  color: #031b4e;
+  font-size: 36px;
+  font-weight: bold;
+}
+
 /* header */
 
   /* nav */
-
 
     /* nav visible */
 
@@ -17,17 +22,25 @@ a {
 
       /* up */
       #ms_nav-up {
-        padding-top: 10px;
+        padding: 10px 5px 0;
       }
 
         #ms_nav-up a {
-          color: rgba(129, 129, 129, 0.9);
+          color: rgba(129, 129, 129);
+        }
+
+        #ms_nav-up a span {
+          background-color: #00d7d2;
+          border-radius: 5px;
+          color: #031b4e;
+          padding: 4px 8px;
+          font-size: 9px;
         }
 
       /* down */
       #ms_nav-down {
         border-top: 1px solid rgba(159, 159, 159, 0.5);
-        padding-top: 10px;
+        padding: 20px 5px 10px;
       }
       .ms_line_nav {
         line-height: 30px;
@@ -58,7 +71,7 @@ a {
         color: rgba(255, 255, 255, 0.8);
       }
 
-    #ms_form {
+    #ms_form{
       background-color: white;
       padding: 40px;
       border-radius: 5px;
@@ -73,33 +86,76 @@ a {
 /* main */
 
   /* section customers */
-  /* img max width 80% height auto
-  calc((100/6) - 4px) */
-  /* inline block.. no float */
+
 
   #customers {
     width: 100%;
+    background: #f3f5f9;
   }
 
-  #customers ul li {
-    width: calc((100% / 6) - 4px);
-    display: inline-block;
-  }
+    #customers div{
+      padding: 40px;
+    }
 
-  #customers ul li img {
-    max-width: 80%;
-    height: auto;
-  }
+      #customers div ul li {
+        width: calc((100% / 6) - 4px);
+        display: inline-block;
+      }
+
+        #customers div ul li img {
+          max-width: 80%;
+          height: auto;
+        }
 
 
   /* section deploy */
 
-  /* section designed */
-  #designed img {
-    max-width: 50%;
+  #deploy div .row {
+    margin-bottom: 40px;
   }
 
+  #deploy > div > p {
+    color: rgba(3,27,78,0.7);
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  #deploy div .row ul {
+    line-height: 40px;
+    border-left: 1px solid rgba(159, 159, 159, 0.5);
+  }
+
+    #deploy h4 {
+      color: #031b4e;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+  /* section designed */
+  #designed {
+    background: #f3f5f9;
+    padding: 50px 0;
+  }
+
+    #designed div p {
+      color: rgba(3,27,78,0.7);
+    }
+
+      #designed div p:first-of-type {
+        font-size: 20px;
+      }
+
+      #designed div p:last-of-type{
+        font-size: 16px;
+        margin: 20px 30%;
+      }
+
+    #designed div img {
+      max-width: 50%;
+    }
+
   /* section built */
+
 
   /* section service */
 
