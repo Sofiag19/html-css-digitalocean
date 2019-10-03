@@ -73,6 +73,24 @@ a {
 /* main */
 
   /* section customers */
+  /* img max width 80% height auto
+  calc((100/6) - 4px) */
+  /* inline block.. no float */
+
+  #customers {
+    width: 100%;
+  }
+
+  #customers ul li {
+    width: calc((100% / 6) - 4px);
+    display: inline-block;
+  }
+
+  #customers ul li img {
+    max-width: 80%;
+    height: auto;
+  }
+
 
   /* section deploy */
 
