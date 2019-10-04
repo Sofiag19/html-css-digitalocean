@@ -63,9 +63,9 @@ h2 {
   /* welcome */
 
   #welcome {
-    margin-top: 100px; /* DEBUG:  */
+    margin-top: 100px;
     background-image: url("../img/bg-home-1-d54581d7.jpg");
-    padding: 40px 0;
+    padding: 100px 0;
   }
 
     #ms_home {
@@ -97,8 +97,15 @@ h2 {
         margin: 20px 0;
       }
 
-      #google a, #github a{
-        width: 100%;
+       .form-group input{
+         padding: 20px;
+         font-size: 16px;
+       }
+
+      .ms_sign{
+        display: inline-block;
+
+        padding: 10px 40px;
         border: 1px solid black;
       }
 
