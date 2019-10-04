@@ -227,9 +227,18 @@ p {
 
   /* section service */
    #service {
-     background-image: url("https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg");
+     background-image: url("../img/data-center-map-20321538.svg");
      background-size: cover;
      background-repeat: no-repeat;
+     background-color: #031b4e;
+     padding-top: 120px;
+     padding-bottom: 120px;
+   }
+
+   #service h2 {
+     color: white;
+     width: 80%;
+     margin: 0 auto;
    }
 
   /* section developments */
