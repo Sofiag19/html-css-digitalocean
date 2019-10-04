@@ -113,7 +113,7 @@
                   </button>
                 </form>
                 <p>or sign up with</p>
-                    <div class="ms_sign">
+                    <div class="ms_sign"> <!-- DEBUG: NON VA BENE!! DA RIFARE -->
                       <a href="#"><i class="fab fa-google"></i>Google</a>
                     </div>
                     <div  class="ms_sign">
@@ -154,47 +154,55 @@
                 <img src="assets\img\splunk-06b17d75.png" alt="splunk" >
               </li>
             </ul>
-            <a href="#">View customer stories <i class="fas fa-chevron-right"></i> </a>
+            <a href="#" class="a-color">View customer stories <i class="fas fa-chevron-right"></i> </a>
           </div>
       </section>
 
       <!-- section deploy -->
       <section id="deploy" >
-        <div class="container">
-          <h2 class="text-center">Deploy and scale seamlessly</h2>
-          <p class="text-center">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
-          <div class="row">
-            <div class="col-xs-12 col-md-offset-2 col-md-2 ">
-              <ul class="list-unstyled">
-                <li> <a href="#">Deploy</a> </li>
-                <li> <a href="#">Scale</a> </li>
-                <li> <a href="#">Store</a> </li>
-                <li> <a href="#">Secure</a> </li>
-                <li> <a href="#">Monitor</a> </li>
-              </ul>
+        <div>
+          <div class="container">
+            <div class="text-center introduction">
+              <h2>Deploy and scale seamlessly</h2>
+              <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
             </div>
-            <div class="col-xs-12 col-md-8">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-                    <img src="" alt="">
-                    <h4>Kubernetes in minutes</h4>
-                    <p>Spin up a managed Kubernetes cluster in just a few clicks. Simply specify the size and location of your worker nodes.</p>
+            <div class="row">
+              <div class="col-xs-12 col-md-offset-2 col-md-2">
+                <ul class="list-unstyled">
+                  <li> <a href="#">Deploy</a> </li>
+                  <li> <a href="#">Scale</a> </li>
+                  <li> <a href="#">Store</a> </li>
+                  <li> <a href="#">Secure</a> </li>
+                  <li> <a href="#">Monitor</a> </li>
+                </ul>
+              </div>
+              <div class="col-xs-12 col-md-8">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <div>
+                        <img src="assets\img\svg5.svg" alt="">
+                        <h4>Kubernetes in minutes</h4>
+                        <p>Spin up a managed Kubernetes cluster in just a few clicks. Simply specify the size and location of your worker nodes.</p>
+                      </div>
+                      <div>
+                        <img src="assets\img\svg32.svg" alt="">
+                        <h4>1-Click App Marketplace</h4>
+                        <p>Quickly deploy projects using one of our preconfigured 1-Click Apps, like LAMP, Docker, and WordPress.</p>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <div>
+                        <img src="assets\img\svg31.svg" alt="">
+                        <h4>Flexible compute types</h4>
+                        <p>With Standard, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
+                      </div>
+                      <div>
+                        <img src="assets\img\svg33.svg" alt="">
+                        <h4>Global availability</h4>
+                        <p>Deploy to any of our data center locations – New York, SF, London, Amsterdam, Bangalore, and more.</p>
+                      </div>
                   </div>
-                  <div class="col-xs-12 col-sm-6">
-                    <img src="" alt="">
-                    <h4>Flexible compute types</h4>
-                    <p>With Standard, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
-                  </div>
-                  <div class="col-xs-12 col-sm-6">
-                    <img src="" alt="">
-                    <h4>1-Click App Marketplace</h4>
-                    <p>Quickly deploy projects using one of our preconfigured 1-Click Apps, like LAMP, Docker, and WordPress.</p>
-                  </div>
-                  <div class="col-xs-12 col-sm-6">
-                    <img src="" alt="">
-                    <h4>Global availability</h4>
-                    <p>Deploy to any of our data center locations – New York, SF, London, Amsterdam, Bangalore, and more.</p>
                   </div>
                 </div>
               </div>
@@ -204,10 +212,12 @@
       </section>
 
       <!-- section designed -->
-      <section id="designed" class="text-center">
-        <div>
-          <h2>Designed for developers</h2>
-          <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+      <section id="designed">
+        <div class="text-center">
+          <div class="introduction ">
+            <h2>Designed for developers</h2>
+            <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+          </div>
           <img src="https://www.digitalocean.com/assets/media/homepage/screenshot-create-kubernetes-cluster-4a930955.jpg" alt="screen">
           <p>Use Kubernetes to improve availability, scalability, and resource efficiency of your containerized applications.</p>
         </div>
@@ -216,31 +226,33 @@
       <!-- section built -->
       <section id="built" >
         <div class="container">
-          <h2 class="text-center">Built for business</h2>
+          <div class="introduction">
+            <h2 class="text-center">Built for business</h2>
+          </div>
           <div class="row">
             <div class="col-xs-6 col-md-3">
-              <img src="" alt="">
+              <img src="assets\img\svg50.svg" alt="">
               <h3>Reliable platform</h3>
               <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
-              <a href="#">Security <i class="fas fa-chevron-right"></i></a>
+              <a href="#" class="a-color">Security <i class="fas fa-chevron-right"></i></a>
             </div>
             <div class="col-xs-6 col-md-3">
-              <img src="" alt="">
+              <img src="assets\img\svg51.svg" alt="">
               <h3>Predictable pricing</h3>
               <p>Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
-              <a href="#">Pricing <i class="fas fa-chevron-right"></i></a>
+              <a href="#" class="a-color">Pricing <i class="fas fa-chevron-right"></i></a>
             </div>
             <div class="col-xs-6 col-md-3">
-              <img src="" alt="">
+              <img src="assets\img\svg52.svg" alt="">
               <h3>World-class service</h3>
               <p>Free around-the-clock technical support for all customers, with additional benefits for premium support subscribers. You’ll feel the love.</p>
-              <a href="#">Support <i class="fas fa-chevron-right"></i></a>
+              <a href="#" class="a-color">Support <i class="fas fa-chevron-right"></i></a>
             </div>
             <div class="col-xs-6 col-md-3">
-              <img src="" alt="">
+              <img src="assets\img\svg53.svg" alt="">
               <h3>Security and compliance</h3>
               <p>Keep your data protected. Our platform is certified on multiple international standards, including SOC 1 Type II, SOC 2 Type II, ISO/IEC 27001, and PCI-DSS.</p>
-              <a href="#">Compliance <i class="fas fa-chevron-right"></i></a>
+              <a href="#" class="a-color">Compliance <i class="fas fa-chevron-right"></i></a>
             </div>
           </div>
         </div>
@@ -249,7 +261,9 @@
       <!-- section service -->
       <section id="service" class="text-center">
         <div class="container">
-          <h2>Service your customers around the world from 12 data centers.</h2>
+          <div class="introduction">
+            <h2>Service your customers around the world from 12 data centers.</h2>
+          </div>
           <div class="row">
             <div class="col-xs-12 col-md-6">
               <table class="table">

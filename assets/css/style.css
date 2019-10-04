@@ -10,6 +10,20 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  color: #031b4e;
+  font-weight: bold;
+}
+
+p {
+  color: rgba(3,27,78,0.7);
+}
+
+.a-color {
+  color: #0069ff;
+  font-size: 16px;
+}
+
 /* header */
 
   /* nav */
@@ -102,14 +116,17 @@ h2 {
          font-size: 16px;
        }
 
-      .ms_sign{
+      .ms_sign{ /* DEBUG: non va bene! */
         display: inline-block;
-
-        padding: 10px 40px;
+        padding: 10px 14%;
         border: 1px solid black;
+        margin-right: 2%;
       }
 
-
+      .ms_sign:last-of-type {
+        margin-right: 0;
+        margin-left: 2%;
+      }
 
 /* main */
 
@@ -138,25 +155,41 @@ h2 {
 
   /* section deploy */
 
-  #deploy div .row {
-    margin-bottom: 40px;
+  #deploy {
+    margin: 100px 0;
   }
 
-  #deploy > div > p {
-    color: rgba(3,27,78,0.7);
+  #deploy > div {
+    margin-bottom: 100px;
+  }
+
+  .introduction {
+    margin-bottom: 50px;
+  }
+
+  .introduction p {
     font-size: 20px;
-    margin-bottom: 40px;
   }
 
   #deploy div .row ul {
     line-height: 40px;
-    border-left: 1px solid rgba(159, 159, 159, 0.5);
+    padding-left: 20px;
+    border-left: 2px solid rgba(159, 159, 159, 0.5);
+  }
+
+  #deploy div .row ul li a {
+    color: rgba(159, 159, 159, 0.8);
   }
 
     #deploy h4 {
       color: #031b4e;
-      margin: 10px 0;
+      margin: 10px 0 20px;
       font-weight: bold;
+    }
+
+    #deploy img {
+      height: 40px;
+      width: 40px;
     }
 
   /* section designed */
@@ -165,27 +198,39 @@ h2 {
     padding: 50px 0;
   }
 
-    #designed div p {
-      color: rgba(3,27,78,0.7);
-    }
-
-      #designed div p:first-of-type {
-        font-size: 20px;
-      }
-
-      #designed div p:last-of-type{
+      #designed > div > p{
         font-size: 16px;
         margin: 20px 30%;
       }
 
-    #designed div img {
+    #designed img {
       max-width: 50%;
     }
 
   /* section built */
+  #built {
+    margin: 50px 0;
+  }
 
+  #built img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #built h3 {
+    margin: 20px 0;
+  }
+
+  #built p {
+    font-size: 16px;
+  }
 
   /* section service */
+   #service {
+     background-image: url("https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg");
+     background-size: cover;
+     background-repeat: no-repeat;
+   }
 
   /* section developments */
 
