@@ -81,7 +81,6 @@ p {
     }
 
     .hamburger {
-      position: relative;
       font-size: 25px;
       line-height: 60px;
     }
@@ -94,12 +93,24 @@ p {
       background-color: white;
       /* padding: 10px; */
       /* height: 100vh; */
-      /* width: 90%; */
+      /* width: 100%; */
       display: none;
       z-index: 30;
     }
 
-    .hamburger:hover #nav_dropdown{
+    #nav_dropdown > a {
+      width: 90%;
+      display: block;
+      padding: 10px 0;
+      font-size: 16px;
+      background-color: #0069ff;
+      color: white;
+      border-radius: 5px;
+      text-align: center;
+      margin: 0 auto 20px;
+    }
+
+    #dropdown:hover #nav_dropdown{
       display: block;
     }
 
@@ -187,8 +198,6 @@ p {
 /* main */
 
   /* section customers */
-
-
   #customers {
     width: 100%;
     background: #f3f5f9;
@@ -256,12 +265,13 @@ p {
 
       #designed > div > p{
         font-size: 16px;
-        margin: 20px 30%;
+        max-width: 600px;
+        margin: 20px auto;
       }
 
-    #designed img { /* DEBUG: non va bene */
-      height: 500px;
-      max-width: 80%;
+    #designed img {
+      width: 80%;
+      max-width: 700px;
     }
 
   /* section built */
@@ -306,8 +316,7 @@ p {
      color: rgba(159, 159, 159, 0.8);
    }
 
-  /* section developments */  /* DEBUG: non va bene l'img */
-  #developments {
+  /* section developments */  /  #developments {
     background: #f3f5f9;
     padding-top: 120px;
     padding-bottom: 120px;
@@ -315,10 +324,12 @@ p {
 
   .review {
     background-color: white;
-    width: 50%;
+    width: 80%;
+    max-width: 700px;
     margin: 0 auto;
     padding: 40px 40px 60px 40px;
   }
+
 
   .review > p {
     font-size: 24px;
