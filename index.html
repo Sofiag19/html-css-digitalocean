@@ -77,13 +77,54 @@
             <div class="col-xs-6">
               <a href="#"><img src="assets\img\digitalocean_logo.png" alt="" class="img-responsive"></a>
             </div>
-            <div class="col-xs-6 ">
-              <div class="text-right">
-                <button type="button" name="button" class="text-right"><i class="fas fa-bars"></i></button>
+            <div class="col-xs-6 "> <!-- DEBUG: non so come ma restringere hover solo all'hamburger -->
+              <div id="dropdown" class="text-right">
+                <a href="#"><i class="fas fa-bars hamburger"></i></a>
+                <div id="nav_dropdown" class="text-left">
+                  <div>
+                    <p class="text-right"><i class="fas fa-times"></i></p>
+                    <ul class="list-unstyled">
+                      <li> <a href="#"> <img src="" alt="">Ciao </a> </li>
+                      <li> <a href="#"> <img src="" alt="">Ciao </a> </li>
+                      <li> <a href="#"> <img src="" alt="">Ciao </a> </li>
+                      <li> <a href="#"> <img src="" alt="">Ciao </a> </li>
+                      <li> <a href="#"> <img src="" alt="">Ciao </a> </li>
+                      <li> <a href="#"> <img src="" alt="">Ciao </a> </li>
+                      <li> <a href="#"> <img src="" alt="">Ciao </a> </li>
+                      <li> <a href="#"> <img src="" alt="">Ciao </a> </li>
+                    </ul>
+                    <hr>
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <ul class="list-unstyled">
+                            <li> <a href="#">Ciao</a> </li>
+                            <li> <a href="#">Ciao</a> </li>
+                            <li> <a href="#">Ciao</a> </li>
+                            <li> <a href="#">Ciao</a> </li>
+                            <li> <a href="#">Ciao</a> </li>
+                          </ul>
+                        </div>
+                        <div class="col-xs-6">
+                          <ul class="list-unstyled">
+                            <li> <a href="#">Ciao</a> </li>
+                            <li> <a href="#">Ciao</a> </li>
+                            <li> <a href="#">Ciao</a> </li>
+                            <li> <a href="#">Ciao</a> </li>
+                            <li> <a href="#">Ciao</a> </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <hr>
+                      <a href="#"></a>
+                    </div>
+                  </div>
+                </div> <!-- fine drop down -->
               </div>
             </div>
           </div>
         </div>
+
       </nav>
 
       <!-- welcome -->
@@ -109,16 +150,19 @@
                   <div class="form-group">
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Create a password">
                   </div>
-                  <button type="submit" class="btn btn-default">Create your account
-                  </button>
+                  <a href="#" class="UnifiedNav-button">Create your account</a>
                 </form>
-                <p>or sign up with</p>
-                    <div class="ms_sign"> <!-- DEBUG: NON VA BENE!! DA RIFARE -->
-                      <a href="#"><i class="fab fa-google"></i>Google</a>
+                <p id="textbetweenlines">or sign up with</p>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <a href="#"><img src="assets\img\svg27.svg" alt="">Google</a>
                     </div>
-                    <div  class="ms_sign">
-                      <a href="#"><i class="fab fa-github"></i>GitHub</a>
+                    <div  class="col-xs-6">
+                      <a href="#"><img src="assets\img\svg28.svg" alt="">GitHub</a>
                     </div>
+                  </div>
+                </div>
                 <p>By signing up you agree to the <a href="#">Terms of Service</a>.</p>
               </div>
             </div>
@@ -179,7 +223,7 @@
               <div class="col-xs-12 col-md-8">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-6">
                       <div>
                         <img src="assets\img\svg5.svg" alt="">
                         <h4>Kubernetes in minutes</h4>
@@ -191,7 +235,7 @@
                         <p>Quickly deploy projects using one of our preconfigured 1-Click Apps, like LAMP, Docker, and WordPress.</p>
                       </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6">
+                    <div class="col-xs-6">
                       <div>
                         <img src="assets\img\svg31.svg" alt="">
                         <h4>Flexible compute types</h4>
@@ -344,12 +388,14 @@
           <div class="introduction">
             <h2>Development teams love DigitalOcean</h2>
           </div>
-          <div>
+          <div class="review">
             <img src="https://www.digitalocean.com/assets/media/homepage/teams/rockerbox-logo-51462da2.png" alt="">
             <p>"We have been able to make scaling the technical infrastructure of our business cost effective and efficient."</p>
-            <p>Rick O'Toole</p>
-            <p>Co-founder and CTO</p>
-            <a href="#">Read story <i class="fas fa-chevron-right"></i></a>
+            <div class="autor">
+              <p>Rick O'Toole</p>
+              <p>Co-founder and CTO</p>
+            </div>
+            <a href="#" class="a-color">Read story <i class="fas fa-chevron-right"></i></a>
           </div>
         </div>
       </section>
@@ -440,13 +486,15 @@
         </div>
       </div>
 
+      <hr>
+
       <!-- footer down -->
       <div id="footer-down">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-md-6">
-              <img src="https://www.digitalocean.com/" alt="" class="img-responsive">
-              <p>© 2019 DigitalOcean, LLC. All rights reserved.</p>
+              <img src="assets\img\svg54.svg" alt="">
+              <span>© 2019 DigitalOcean, LLC. All rights reserved.</span>
             </div>
             <div class="col-xs-12 col-md-6">
               <div class=" text-right">

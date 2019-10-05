@@ -73,11 +73,40 @@ p {
       /* background-color: #0069ff;  fare hover*/
 
     /* nav hidden */
+    #ms_nav-hidden {
+      background: none;
+    }
+    #dropdown {
+      position: relative;
+    }
+
+    .hamburger {
+      position: relative;
+      font-size: 25px;
+      line-height: 60px;
+    }
+
+    #nav_dropdown {
+      position: fixed;
+      top: 5px;
+      right: 5px;
+      left: 5px;
+      background-color: white;
+      /* padding: 10px; */
+      /* height: 100vh; */
+      /* width: 90%; */
+      display: none;
+      z-index: 30;
+    }
+
+    .hamburger:hover #nav_dropdown{
+      display: block;
+    }
 
   /* welcome */
 
   #welcome {
-    margin-top: 100px;
+    margin-top: 80px;
     background-image: url("../img/bg-home-1-d54581d7.jpg");
     padding: 100px 0;
   }
@@ -89,7 +118,7 @@ p {
     }
 
       #ms_home h1 {
-        font-size:40px ;
+        font-size:55px ;
         font-weight: 700;
       }
 
@@ -116,16 +145,43 @@ p {
          font-size: 16px;
        }
 
-      .ms_sign{ /* DEBUG: non va bene! */
-        display: inline-block;
-        padding: 10px 14%;
-        border: 1px solid black;
-        margin-right: 2%;
-      }
+       form a {
+         width: 100%;
+         display: block;
+         padding: 10px 0;
+         font-size: 16px;
+         background-color: #0069ff;
+         color: white;
+         border-radius: 5px;
+       }
 
-      .ms_sign:last-of-type {
-        margin-right: 0;
-        margin-left: 2%;
+       #textbetweenlines {
+         color: rgba(159, 159, 159, 0.8);
+         display: grid;
+         width: 100%;
+         align-items: center;
+         text-align: center;
+         grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+         grid-gap: 20px;
+         margin-top: 20px;
+       }
+
+       #textbetweenlines::after, #textbetweenlines::before {
+         content: "";
+         border: 0.5px solid rgba(159, 159, 159, 0.8);
+       }
+
+       #ms_form div .row div a {
+         display: block;
+         border: 1px solid #0069ff;
+         background-color: rgb(213, 228, 247);
+         padding: 10px 0;
+         border-radius: 5px;
+         margin: 20px 0;
+       }
+
+      #ms_form img {
+        width: 20px;
       }
 
 /* main */
@@ -203,8 +259,9 @@ p {
         margin: 20px 30%;
       }
 
-    #designed img {
-      max-width: 50%;
+    #designed img { /* DEBUG: non va bene */
+      height: 500px;
+      max-width: 80%;
     }
 
   /* section built */
@@ -241,12 +298,77 @@ p {
      margin: 0 auto;
    }
 
-  /* section developments */
+   #service table tr td:first-of-type {
+     color: white;
+   }
+
+   #service table tr td:nth-of-type(2){
+     color: rgba(159, 159, 159, 0.8);
+   }
+
+  /* section developments */  /* DEBUG: non va bene l'img */
+  #developments {
+    background: #f3f5f9;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .review {
+    background-color: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px 40px 60px 40px;
+  }
+
+  .review > p {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+  .autor {
+    margin: 20px 0;
+  }
 
   /* section get started */
+  #getstarted {
+    background-image: url("../img/bg-home-1-d54581d7.jpg");
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+   #getstarted h2 {
+     color: white;
+     margin-bottom: 30px;
+   }
+
+
 
 /* footer */
+footer {
+  background-color: rgb(1, 14, 40);
+  padding: 60px;
+  color: rgba(159, 159, 159, 0.8);
+}
+
+  footer a {
+    color: rgba(159, 159, 159, 0.8);
+  }
+
+  footer .fab {
+    font-size: 25px;
+  }
 
   /* up */
+  #footer-up h5 {
+    color: white;
+  }
 
+  footer hr {
+    color: rgba(159, 159, 159, 0.3);
+    margin: 40px 0;
+  }
   /* down */
+  #footer-down img {
+    width: 40px;
+    height: 40px;
+  }
