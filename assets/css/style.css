@@ -86,16 +86,19 @@ p {
     }
 
     #nav_dropdown {
-      position: fixed;
+      position: absolute;
       top: 5px;
       right: 5px;
       left: 5px;
       background-color: white;
-      /* padding: 10px; */
-      /* height: 100vh; */
-      /* width: 100%; */
       display: none;
       z-index: 30;
+      font-size: 20px;
+      line-height: 40px;
+    }
+
+    #nav_dropdown img {
+      width: 40px;
     }
 
     #nav_dropdown > a {
